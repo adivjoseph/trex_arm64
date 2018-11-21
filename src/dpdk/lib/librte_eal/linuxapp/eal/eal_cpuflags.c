@@ -33,6 +33,7 @@ typedef Elf64_auxv_t Internal_Elfx_auxv_t;
 typedef Elf32_auxv_t Internal_Elfx_auxv_t;
 #endif
 
+
 /**
  * Provides a method for retrieving values from the auxiliary vector and
  * possibly running a string comparison.

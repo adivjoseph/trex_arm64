@@ -170,6 +170,7 @@ ZMQ_EXPORT int zmq_ctx_get (void *context, int option);
 /*  Old (legacy) API                                                          */
 ZMQ_EXPORT void *zmq_init (int io_threads);
 ZMQ_EXPORT int zmq_term (void *context);
+#define zmq_ctx_term zmq_term  //BUG
 
 
 /******************************************************************************/

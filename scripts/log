@@ -1,0 +1,174 @@
+Killing Scapy server... Scapy server is killed
+Starting Scapy server.... Scapy server is started
+The ports are bound/configured.
+Starting  TRex v2.48 please wait  ... 
+EAL: Started without hugepages support, physical addresses not available
+ set driver name net_af_packet 
+ driver capability  :
+ Number of ports found: 2
+zmq publisher at: tcp://*:4500
+ wait 1 sec .
+port : 0 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+port : 1 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+ number of ports         : 2 
+ max cores for 2 ports   : 1 
+ max queue per port      : 3 
+ -------------------------------
+RX core uses TX queue number 0 on all ports
+ core, c-port, c-queue, s-port, s-queue, lat-queue
+ ------------------------------------------
+ 1        0      0       1       0      0  
+ -------------------------------
+[2J[2H
+-Per port stats table 
+      ports |               0 |               1 
+ -----------------------------------------------------------------------------------------
+   opackets |               0 |               0 
+     obytes |               0 |               0 
+   ipackets |               0 |               0 
+     ibytes |               0 |               0 
+    ierrors |               0 |               0 
+    oerrors |               0 |               0 
+      Tx Bw |       0.00  bps |       0.00  bps 
+
+-Global stats enabled 
+ Cpu Utilization : 0.0  %
+ Platform_factor : 1.0  
+ Total-Tx        :       0.00  bps  
+ Total-Rx        :       0.00  bps  
+ Total-PPS       :       0.00  pps  
+ Total-CPS       :       0.00  cps  
+
+ Expected-PPS    :       0.00  pps  
+ Expected-CPS    :       0.00  cps  
+ Expected-BPS    :       0.00  bps  
+
+ Active-flows    :        0  Clients :        0   Socket-util : 0.0000 %    
+ Open-flows      :        0  Servers :        0   Socket :        0 Socket/Clients :  nan 
+ drop-rate       :       0.00  bps   
+ current time    : 1.7 sec  
+ test duration   : 0.0 sec  
+[2J[2H
+-Per port stats table 
+      ports |               0 |               1 
+ -----------------------------------------------------------------------------------------
+   opackets |               0 |               0 
+     obytes |               0 |               0 
+   ipackets |               0 |               0 
+     ibytes |               0 |               0 
+    ierrors |               0 |               0 
+    oerrors |               0 |               0 
+      Tx Bw |       0.00  bps |       0.00  bps 
+
+-Global stats enabled 
+ Cpu Utilization : 0.0  %
+ Platform_factor : 1.0  
+ Total-Tx        :       0.00  bps  
+ Total-Rx        :       0.00  bps  
+ Total-PPS       :       0.00  pps  
+ Total-CPS       :       0.00  cps  
+
+ Expected-PPS    :       0.00  pps  
+ Expected-CPS    :       0.00  cps  
+ Expected-BPS    :       0.00  bps  
+
+ Active-flows    :        0  Clients :        0   Socket-util : 0.0000 %    
+ Open-flows      :        0  Servers :        0   Socket :        0 Socket/Clients :  nan 
+ drop-rate       :       0.00  bps   
+ current time    : 2.2 sec  
+ test duration   : 0.0 sec  
+[2J[2H
+-Per port stats table 
+      ports |               0 |               1 
+ -----------------------------------------------------------------------------------------
+   opackets |               0 |               0 
+     obytes |               0 |               0 
+   ipackets |               0 |               0 
+     ibytes |               0 |               0 
+    ierrors |               0 |               0 
+    oerrors |               0 |               0 
+      Tx Bw |       0.00  bps |       0.00  bps 
+
+-Global stats enabled 
+ Cpu Utilization : 0.0  %
+ Platform_factor : 1.0  
+ Total-Tx        :       0.00  bps  
+ Total-Rx        :       0.00  bps  
+ Total-PPS       :       0.00  pps  
+ Total-CPS       :       0.00  cps  
+
+ Expected-PPS    :       0.00  pps  
+ Expected-CPS    :       0.00  cps  
+ Expected-BPS    :       0.00  bps  
+
+ Active-flows    :        0  Clients :        0   Socket-util : 0.0000 %    
+ Open-flows      :        0  Servers :        0   Socket :        0 Socket/Clients :  nan 
+ drop-rate       :       0.00  bps   
+ current time    : 2.7 sec  
+ test duration   : 0.0 sec  
+[2J[2H
+-Per port stats table 
+      ports |               0 |               1 
+ -----------------------------------------------------------------------------------------
+   opackets |               0 |               0 
+     obytes |               0 |               0 
+   ipackets |               0 |               0 
+     ibytes |               0 |               0 
+    ierrors |               0 |               0 
+    oerrors |               0 |               0 
+      Tx Bw |       0.00  bps |       0.00  bps 
+
+-Global stats enabled 
+ Cpu Utilization : 0.0  %
+ Platform_factor : 1.0  
+ Total-Tx        :       0.00  bps  
+ Total-Rx        :       0.00  bps  
+ Total-PPS       :       0.00  pps  
+ Total-CPS       :       0.00  cps  
+
+ Expected-PPS    :       0.00  pps  
+ Expected-CPS    :       0.00  cps  
+ Expected-BPS    :       0.00  bps  
+
+ Active-flows    :        0  Clients :        0   Socket-util : 0.0000 %    
+ Open-flows      :        0  Servers :        0   Socket :        0 Socket/Clients :  nan 
+ drop-rate       :       0.00  bps   
+ current time    : 3.2 sec  
+ test duration   : 0.0 sec  
+[2J[2H
+-Per port stats table 
+      ports |               0 |               1 
+ -----------------------------------------------------------------------------------------
+   opackets |               0 |               0 
+     obytes |               0 |               0 
+   ipackets |               0 |               0 
+     ibytes |               0 |               0 
+    ierrors |               0 |               0 
+    oerrors |               0 |               0 
+      Tx Bw |       0.00  bps |       0.00  bps 
+
+-Global stats enabled 
+ Cpu Utilization : 0.0  %
+ Platform_factor : 1.0  
+ Total-Tx        :       0.00  bps  
+ Total-Rx        :       0.00  bps  
+ Total-PPS       :       0.00  pps  
+ Total-CPS       :       0.00  cps  
+
+ Expected-PPS    :       0.00  pps  
+ Expected-CPS    :       0.00  cps  
+ Expected-BPS    :       0.00  bps  
+
+ Active-flows    :        0  Clients :        0   Socket-util : 0.0000 %    
+ Open-flows      :        0  Servers :        0   Socket :        0 Socket/Clients :  nan 
+ drop-rate       :       0.00  bps   
+ current time    : 3.7 sec  
+ test duration   : 0.0 sec  
+ *** TRex is shutting down - cause: 'CTRL + C detected'
+ All cores stopped !! 

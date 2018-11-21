@@ -1,0 +1,1 @@
+cmd_/root/trex-core/scripts/ko/src/igb_uio.ko := ld -EL -r  -T ./scripts/module-common.lds -T ./arch/arm64/kernel/module.lds --build-id  -o /root/trex-core/scripts/ko/src/igb_uio.ko /root/trex-core/scripts/ko/src/igb_uio.o /root/trex-core/scripts/ko/src/igb_uio.mod.o ;  true

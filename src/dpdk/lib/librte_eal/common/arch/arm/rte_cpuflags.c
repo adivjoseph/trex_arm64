@@ -99,6 +99,9 @@ const struct feature_entry rte_cpu_feature_table[] = {
 };
 #endif /* RTE_ARCH */
 
+
+
+
 /*
  * Read AUXV software register and get cpu features for ARM
  */

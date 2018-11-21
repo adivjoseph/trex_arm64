@@ -418,7 +418,12 @@ RXCapturePort::~RXCapturePort() {
 
 void RXCapwapProxy::create(RXFeatureAPI *api) {
     m_api = api;
-    m_wired_bpf_filter = bpfjit_compile("ip and udp src port 5247 and udp[48:2] == 2048");
+     #ifdef TREX_USE_BPFJIT
+     m_wired_bpf_filter = bpfjit_compile("ip and udp src port 5247 and udp[48:2] == 2048");
+     #else
+     m_wired_bpf_filter = bpf_compile("ip and udp src port 5247 and udp[48:2] == 2048");
+    #endif
+    //K m_wired_bpf_filter = bpfjit_compile("ip and udp src port 5247 and udp[48:2] == 2048");
 }
 
 

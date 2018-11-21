@@ -186,7 +186,11 @@ CLinuxIfNode::CLinuxIfNode(const string &ns_name, const string &mac_str, const s
     create_net(mtu);
     set_src_mac(mac_str, mac_buf);
     bind_pair();
-    m_bpf = bpfjit_compile("not udp and not tcp");
+    #ifdef TREX_USE_BPFJIT
+     m_bpf = bpfjit_compile("not udp and not tcp");
+     #else
+     m_bpf = bpf_compile("not udp and not tcp");
+     #endif
 }
 
 CLinuxIfNode::~CLinuxIfNode() {
@@ -279,7 +283,12 @@ void CLinuxIfNode::conf_vlan_internal(const vlan_list_t &vlans) {
         bpf_str += "vlan " + to_string(vlan) + " and ";
     }
     bpf_str += "not udp and not tcp";
-    m_bpf = bpfjit_compile(bpf_str.c_str());
+    #ifdef TREX_USE_BPFJIT
+     m_bpf = bpfjit_compile(bpf_str.c_str());
+     #else
+     m_bpf = bpf_compile(bpf_str.c_str());
+     #endif
+
     m_vlan_tags = vlans;
 }
 

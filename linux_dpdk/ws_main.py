@@ -699,6 +699,53 @@ dpdk_src_x86_64 = SrcGroup(dir='src/dpdk/',
 
 dpdk_src_aarch64 = SrcGroup(dir='src/dpdk/',
         src_list=[
+                  #ixgbe
+                 'drivers/net/ixgbe/base/ixgbe_82598.c',
+                 'drivers/net/ixgbe/base/ixgbe_82599.c',
+                 'drivers/net/ixgbe/base/ixgbe_api.c',
+                 'drivers/net/ixgbe/base/ixgbe_common.c',
+                 'drivers/net/ixgbe/base/ixgbe_dcb.c',
+                 'drivers/net/ixgbe/base/ixgbe_dcb_82598.c',
+                 'drivers/net/ixgbe/base/ixgbe_dcb_82599.c',
+                 'drivers/net/ixgbe/base/ixgbe_hv_vf.c',
+                 'drivers/net/ixgbe/base/ixgbe_mbx.c',
+                 'drivers/net/ixgbe/base/ixgbe_phy.c',
+                 'drivers/net/ixgbe/base/ixgbe_vf.c',
+                 'drivers/net/ixgbe/base/ixgbe_x540.c',
+                 'drivers/net/ixgbe/base/ixgbe_x550.c',
+                 'drivers/net/ixgbe/ixgbe_ethdev.c',
+                 'drivers/net/ixgbe/ixgbe_fdir.c',
+                 'drivers/net/ixgbe/ixgbe_flow.c',
+                 'drivers/net/ixgbe/ixgbe_pf.c',
+                 'drivers/net/ixgbe/ixgbe_rxtx.c',
+                 'drivers/net/ixgbe/ixgbe_rxtx_vec_neon.c',
+                 #'drivers/net/ixgbe/ixgbe_ipsec.c',
+                 'drivers/net/ixgbe/ixgbe_tm.c',
+                 'drivers/net/ixgbe/ixgbe_vf_representor.c',
+                 'drivers/net/ixgbe/rte_pmd_ixgbe.c',
+
+                 #i40e
+                 'drivers/net/i40e/base/i40e_adminq.c',
+                 'drivers/net/i40e/base/i40e_common.c',
+                 'drivers/net/i40e/base/i40e_dcb.c',
+                 'drivers/net/i40e/base/i40e_diag.c',
+                 'drivers/net/i40e/base/i40e_hmc.c',
+                 'drivers/net/i40e/base/i40e_lan_hmc.c',
+                 'drivers/net/i40e/base/i40e_nvm.c',
+                 'drivers/net/i40e/i40e_ethdev.c',
+                 'drivers/net/i40e/i40e_ethdev_vf.c',
+                 'drivers/net/i40e/i40e_fdir.c',
+                 'drivers/net/i40e/i40e_flow.c',
+                 'drivers/net/i40e/i40e_pf.c',
+                 'drivers/net/i40e/i40e_rxtx.c',
+                 'drivers/net/i40e/i40e_rxtx_vec_neon.c',
+                 'drivers/net/i40e/i40e_tm.c',
+                 'drivers/net/i40e/i40e_vf_representor.c',
+                 'drivers/net/i40e/rte_pmd_i40e.c',
+
+            #af_packet
+            'drivers/net/af_packet/rte_eth_af_packet.c',
+
                  #virtio
                  'drivers/net/virtio/virtio_rxtx_simple_neon.c',
 
@@ -805,6 +852,7 @@ dpdk_src = SrcGroup(dir='src/dpdk/',
                  'lib/librte_eal/linuxapp/eal/eal_timer.c',
                  'lib/librte_eal/linuxapp/eal/eal_vfio_mp_sync.c',
                  'lib/librte_eal/linuxapp/eal/eal_vfio.c',
+                 'lib/librte_eal/linuxapp/eal/eal_cpuflags.c',  
                  'lib/librte_ethdev/rte_ethdev.c',
                  'lib/librte_ethdev/rte_flow.c',
                  'lib/librte_ethdev/ethdev_profile.c',
@@ -993,7 +1041,6 @@ if march == 'x86_64':
 elif march == 'aarch64':
     common_flags_new = common_flags + [
                        '-march=native',
-                       '-mtune=cortex-a72',
                        '-DRTE_ARCH_64',
                        '-DRTE_FORCE_INTRINSICS',
                        '-DRTE_MACHINE_NEON',
@@ -1115,7 +1162,7 @@ bpf_includes_path = '../external_libs/bpf ../external_libs/bpf/bpfjit'
 if march != 'aarch64':
     DPDK_FLAGS=['-D_GNU_SOURCE', '-DPF_DRIVER', '-DX722_SUPPORT', '-DX722_A0_SUPPORT', '-DVF_DRIVER', '-DINTEGRATED_VF', '-include', '../src/pal/linux_dpdk/dpdk1808_x86_64/rte_config.h'];
 else:
-    DPDK_FLAGS=['-D_GNU_SOURCE', '-DPF_DRIVER', '-DVF_DRIVER', '-DINTEGRATED_VF', '-DRTE_FORCE_INTRINSICS', '-include', '../src/pal/linux_dpdk/dpdk1808_aarch64/rte_config.h'];
+    DPDK_FLAGS=['-D_GNU_SOURCE', '-DPF_DRIVER','-DX722_SUPPORT', '-DX722_A0_SUPPORT', '-DVF_DRIVER', '-DINTEGRATED_VF', '-DRTE_FORCE_INTRINSICS', '-include', '../src/pal/linux_dpdk/dpdk1808_aarch64/rte_config.h'];
 
 client_external_libs = [
         'simple_enum',
