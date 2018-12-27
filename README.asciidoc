@@ -1,4 +1,4 @@
-==TRex armv8 (arm64, aarch64)
+== TRex armv8 (arm64, aarch64)
 TRex arm support was not generic arm64 support but NXP SOC integrated network accelerator on arm support ONLY.
 DPDK has serveral arguments that determine target, not just ISA (X86 or arm). Within DPDK arm support there are esentually a generaic arm64 server build target - T=arm64-armv8a-linuxapp-gcc  and a number of arm vendor specific targets. TRex build environment ONLY understands ISA target and not platform variances.
 
