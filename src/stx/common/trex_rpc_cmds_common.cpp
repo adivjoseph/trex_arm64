@@ -354,7 +354,8 @@ TrexRpcCmdGetSysInfo::get_cpu_model() {
         }
     }
 
-    return "unknown";
+
+    return RTE_ARCH;
 }
 
 void
