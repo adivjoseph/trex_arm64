@@ -1,8 +1,8 @@
 == TRex armv8 (arm64, aarch64)
 TRex arm support was not generic arm64 support but NXP SOC integrated network accelerator on arm support ONLY.
-DPDK has serveral arguments that determine target, not just ISA (X86 or arm). Within DPDK arm support there are esentually a generaic arm64 server build target - T=arm64-armv8a-linuxapp-gcc  and a number of arm vendor specific targets. TRex build environment ONLY understands ISA target and not platform variances.
+DPDK has serveral arguments that determine target, not just ISA (X86 or arm). Within DPDK arm support there is esentually a generaic arm64 server build target - T=arm64-armv8a-linuxapp-gcc  and a number of arm vendor specific targets (forks). TRex build environment ONLY understands ISA target and not platform variances.
 
-This port builds a generic arm64 server (PCIe connected PMD/NICs) that supports most PMD's (MLX can be enabled) and has been tested with severa arm64 server solutions and AF_PACKET PMD, Intel NIC PMD's.
+This port builds a generic arm64 server (PCIe connected PMD/NICs) that supports most PMD's (MLX can be enabled) and has been tested with several arm64 server solutions and AF_PACKET PMD, Intel NIC PMD's.
 
 
 == TRex Low-Cost, High-Speed Stateful Traffic Generator
